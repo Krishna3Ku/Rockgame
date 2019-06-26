@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta content="This website is a simulation of how you can play the rock, paper and scissors game."
+    name="description">
+  <meta content="Brian Tuju" name="author">
+  <title>Rock,Scissors n Paper</title>
+  <link href="https://fonts.googleapis.com/css?family=Rancho&display=swap" rel="stylesheet">
+<!-- Google font -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><!-- Bootstrap -->
+  <link href="./styles.css" rel="stylesheet"><!-- Styles -->
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="card">
+      <h2 class="card-header">Rock, Paper and Scissors game</h2>
+      <div class="card-body shadow" id="cardBody">
+        <button class="btn text-center light-border mb-2 mt-2" id="howToPlay">How to play</button>
+        <p class="light-border" id="roundTracker">You are on round <i id="currentRound">x</i> of
+          <i id="chosenRounds">y</i></p>
+        <div class="font-weight-bold p-3" id="human">
+          <p>Your score:</p><input class="" disabled id="humanValue" name="humanScore" type="text" value="0">
+        </div>
+        <div class="font-weight-bold p-3" id="comp">
+          <p>Computer's score:</p><input class="" disabled id="compValue" name="computerScore" type="text" value="0">
+        </div>
+        <div class="font-weight-bold p-2" id="outcomeMessage">
+          <p>Play to see the outcome</p>
+        </div>
+        <div class="hide" id="reload">
+          To restart game, press <button class="light-border" id="reloadBtn" type="button">Reload</button> Button
+        </div>
+        <div class="text-center p-2 hide" id="restart">
+          <p id="restartMsg"></p><button class="light-border" id="yesRestart" type="button">Yes</button> <button
+            class="light-border" id="noRestart" type="button">No</button>
+        </div>
+        <div class="text-center p-1 hide" id="resetInfo">
+          <p class="p-1 mb-0 font-italic">To reset score you must play at least ONE ROUND. You can
+            check <a href="https://www.wikihow.com/Play-Rock,-Paper,-Scissors" id="toggleHowToPlay" rel="noopener"
+              target="_blank" title="How to Play Rock, Paper, Scissors">how to play</a>
+            to learn the basics.</p><button class="btn light-border mt-1" id="resetBtn">Okay</button>
+        </div>
+        <div class="hide" id="helpInfo">
+          <p class="font-italic pl-2">To play, click the <strong>Start Game</strong> button below.
+            To reset your progress hit the <strong>Reset</strong> button. These are the <a href="#">rules</a>:</p>
+          <ul>
+            <li class="text-danger">Rock wins over Scissors</li>
+            <li class="text-success">Paper wins over Rock</li>
+            <li class="text-primary">Scissors wins over Paper</li>
+          </ul><button class="btn mb-2 light-border" id="helpBtn" type="button">Okay, I got
+            it</button>
+        </div>
+      </div>
+      <div class="hide" id="social">
+        <a class="btn btn-sm col facebook" href="https://www.facebook.com">f</a> <a class="btn btn-sm col twitter"
+          href="https://www.twitter.com">t</a> <a class="btn btn-sm col email" href="mailto:briantuju@gmail.com">@</a>
+      </div>
+      <div class="mt-4" id="gameBtns">
+        <button id="startGame">Start Game</button>
+        <button id="resetScore">Reset</button>
+      </div>
+      <div class="card-footer hide" id="footer">
+        <div class="btns">
+          <button class="btn btn-danger" id="rock" onclick="playgame_Fn('rock')" type="button">Rock</button>
+          <button class="btn btn-success" id="paper" onclick="playgame_Fn('paper')" type="button">Paper</button>
+          <button class="btn btn-primary" id="scissors" onclick="playgame_Fn('scissors')" type="button">Scissors</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="./scripts.js">
+  </script>
+</body>
+
+</html>
