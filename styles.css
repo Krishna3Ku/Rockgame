@@ -32,7 +32,7 @@ html, body {
   box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .15);
 }
 .hide {
-  display: inline-block;
+  display: none;
 }
 #roundTracker {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
