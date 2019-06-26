@@ -1,0 +1,188 @@
+html, body {
+  font-family: monospace !important;
+}
+/* Card styling */
+
+.card {
+  margin: 0 auto;
+  max-width: 420px;
+  position: relative;
+}
+.card-header {
+  text-align: center;
+  background: teal;
+  color: #ffffff;
+}
+.card-body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 0;
+}
+.light-border, .light-border:focus, .light-border:active {
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  outline: none;
+  background: transparent;
+  color: #464646;
+  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .15);
+}
+.hide {
+  display: none;
+}
+#roundTracker {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  word-spacing: 3px;
+  font-size: 1.15em;
+  padding: .25em 1em;
+}
+#currentRound, #chosenRounds {
+  color: #28a745;
+}
+#humanValue, #compValue {
+  text-align: center;
+  float: right;
+  border-radius: 3px;
+  border: 1px solid #e7e7e7;
+  font-size: 1.3em;
+  background: white;
+  color: #000000;
+}
+#outcomeMessage {
+  text-align: center;
+  font-family: 'Rancho', cursive;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  color: #28a745;
+}
+#reload {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #dc3545;
+  font-size: 1em;
+  text-align: center;
+  background: #ffffff;
+}
+#restart {
+  position: absolute;
+  background: #ffffff;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+#noRestart, #yesRestart {
+  width: 50%;
+  margin: .5em auto;
+}
+#resetInfo {
+  position: absolute;
+  background: #ffffff;
+  top: 0;
+  bottom: 0;
+  line-height: 2em;
+}
+#helpInfo {
+  position: absolute;
+  margin-top: 10px;
+  top: 10%;
+  padding-top: 1.5em;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .15);
+}
+#helpBtn {
+  width: 50%;
+  margin-left: 25%;
+}
+#social {
+  position: absolute;
+  top: 40%;
+  bottom: 40%;
+  right: 0;
+  width: 12%;
+  height: min-content;
+}
+.facebook {
+  background: #3b5998;
+  color: #ffffff;
+  padding: 5px 0;
+  margin-bottom: 3px;
+}
+.twitter {
+  background: #1da1f2;
+  color: #ffffff;
+  padding: 5px 0;
+  margin-bottom: 3px;
+}
+.email {
+  background: #343A40;
+  color: #ffffff;
+  padding: 5px 0;
+}
+#gameBtns {
+  display: flex;
+  width: 90%;
+  margin: 1em auto !important;
+  justify-content: space-between;
+}
+#startGame, #resetScore, #share {
+  text-align: center;
+  font-family: sans-serif;
+  width: 32%;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  outline: none;
+  padding: 5px 0;
+  background: transparent;
+  color: #727272;
+}
+#startGame:active,
+#startGame:focus,
+#resetScore:active,
+#resetScore:focus,
+#share:active,
+#share:focus {
+  transition: ease-in-out .3s;
+  background: #e7e7e7;
+  color: #433e50;
+}
+.light-border:active {
+  background: #e7e7e7;
+}
+.float-reset-btn {
+  position: absolute;
+  left: 0;
+  top: 35%;
+}
+.font-weight-bold {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.visible {
+  display: block !important;
+}
+.card-footer {
+  background-color: #fff;
+}
+#social a {
+  display: block;
+}
+.btns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#rock, #paper, #scissors {
+  width: 32%;
+  font-size: 1.1em;
+  border-radius: 3px;
+  border: 1px solid #e7e7e7;
+  padding: 1em 0;
+  border-radius: 5px;
+}
